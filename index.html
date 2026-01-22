@@ -3,16 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mastour & Chic - Boutique</title>
+<title>Studio Jasmin</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --rose:#f7d6e8;
-    --rose2:#f2c4dd;
+    --rose2:#f3cfe0;
     --gold:#d4af37;
+    --bleu:#a7d3f2;
     --text:#1f1f1f;
-    --soft:#fdf7fb;
-    --border:#e6d7e2;
+    --soft:#fff6fb;
+    --border:#e7d6e2;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   body{
@@ -21,7 +22,7 @@
     background:linear-gradient(180deg, #fff 0%, var(--soft) 100%);
   }
   header{
-    padding:20px 18px;
+    padding:18px 18px;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -39,10 +40,11 @@
     letter-spacing:1px;
   }
   nav a{
-    margin-left:18px;
+    margin-left:16px;
     text-decoration:none;
     color:#333;
     font-weight:500;
+    font-size:14px;
   }
   .btn{
     padding:10px 14px;
@@ -57,6 +59,8 @@
   .hero{
     padding:70px 18px 40px;
     text-align:center;
+    background:linear-gradient(90deg, var(--rose), var(--bleu));
+    border-bottom:1px solid var(--border);
   }
   .hero h1{
     font-family:'Playfair Display',serif;
@@ -66,8 +70,11 @@
   }
   .hero p{
     font-size:16px;
-    color:#555;
+    color:#2d2d2d;
     margin-bottom:20px;
+    max-width:720px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .hero .cta{
     display:flex;
@@ -86,6 +93,11 @@
   }
   .section{
     padding:40px 18px;
+  }
+  .section h2{
+    font-family:'Playfair Display',serif;
+    font-size:28px;
+    margin-bottom:18px;
   }
   .grid{
     display:grid;
@@ -123,9 +135,10 @@
   .banner{
     margin:40px 0;
     padding:30px 18px;
-    background:linear-gradient(90deg, var(--rose), var(--rose2));
+    background:linear-gradient(90deg, var(--rose2), #fff);
     border-radius:20px;
     text-align:center;
+    border:1px solid var(--border);
   }
   .banner h2{
     font-family:'Playfair Display',serif;
@@ -155,7 +168,7 @@
 <body>
 
 <header>
-  <div class="logo">Mastour & Chic</div>
+  <div class="logo">Studio Jasmin</div>
   <nav>
     <a href="#shop">Boutique</a>
     <a href="#brow">Brow Lift</a>
@@ -166,11 +179,8 @@
 </header>
 
 <section class="hero">
-  <h1>La boutique chic & moderne</h1>
-  <p>Bienvenue chez Mastour & Chic.<br><br>
-Mastour & Chic est une boutique en ligne chic et moderne dédiée aux accessoires, voiles et inspirations mode.
-Nous sélectionnons des pièces élégantes et tendances pour sublimer chaque style, au quotidien comme pour les occasions spéciales.<br><br>
-Découvrez nos collections et inspirations soigneusement choisies pour allier féminité, modernité et élégance.</p>
+  <h1>Beauté & style, en un seul endroit</h1>
+  <p>Brow lift • Rehaussement de cils • Accessoires mode</p>
   <div class="cta">
     <button class="btn btn-primary">Découvrir la boutique</button>
     <button class="btn">Voir les looks</button>
@@ -178,85 +188,63 @@ Découvrez nos collections et inspirations soigneusement choisies pour allier f�
 </section>
 
 <section class="section" id="shop">
-  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Nos collections</h2>
+  <h2>Nos collections</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Mode chic">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Voiles & accessoires">
       <div class="card-body">
         <div class="card-title">Voiles & accessoires</div>
-        <div class="card-text">Des voiles élégants, des accessoires tendance pour un style moderne.</div>
+        <div class="card-text">Voiles élégants & accessoires tendance</div>
         <button class="btn">Voir la collection</button>
       </div>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Mode chic">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Textile & looks">
       <div class="card-body">
         <div class="card-title">Textile & looks</div>
-        <div class="card-text">Des tenues simples, chic et modernes pour toutes les occasions.</div>
+        <div class="card-text">Looks chics, simples & modernes</div>
         <button class="btn">Voir la collection</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="banner">
-  <h2>Beauté & style</h2>
-  <p>Coin Brow lift / Rehaussement de cils dans la boutique. Prends rendez-vous pour sublimer ton regard.</p>
-</div>
-
-<section class="section" id="brow">
-  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Brow Lift & Cils</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Brow lift">
-      <div class="card-body">
-        <div class="card-title">Brow Lift</div>
-        <div class="card-text">Un regard plus ouvert et des sourcils parfaitement dessinés.</div>
-        <button class="btn">Réserver</button>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1591061232913-6d5d2d56d1f2?auto=format&fit=crop&w=1200&q=80" alt="Rehaussement de cils">
-      <div class="card-body">
-        <div class="card-title">Rehaussement de cils</div>
-        <div class="card-text">Des cils plus longs, plus recourbés et un regard intensifié.</div>
-        <button class="btn">Réserver</button>
       </div>
     </div>
   </div>
 </section>
 
 <section class="section" id="access">
-  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Accessoires & tendances</h2>
+  <h2>Accessoires</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Accessoires">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Accessoires téléphone">
       <div class="card-body">
         <div class="card-title">Accessoires téléphone</div>
-        <div class="card-text">Coques, accessoires et petits indispensables pour un style complet.</div>
+        <div class="card-text">Coques & accessoires stylés</div>
         <button class="btn">Voir la collection</button>
       </div>
     </div>
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80" alt="Accessoires mode">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80" alt="Bijoux">
       <div class="card-body">
-        <div class="card-title">Accessoires mode</div>
-        <div class="card-text">Bijoux, sacs et petits détails qui font toute la différence.</div>
+        <div class="card-title">Bijoux & détails</div>
+        <div class="card-text">Bijoux & détails qui font la différence</div>
         <button class="btn">Voir la collection</button>
       </div>
     </div>
   </div>
 </section>
 
+<div class="banner" id="brow">
+  <h2>Brow Lift & Rehaussement de cils</h2>
+  <p>Regard sublimé • Résultats naturels • 1h</p>
+</div>
+
 <section class="section" id="contact">
-  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Contact</h2>
-  <p style="margin-bottom:12px;">Tu veux en savoir plus ? Envoie un message :</p>
-  <p style="color:#777; font-size:14px;">Email : contact@mastourchic.com</p>
+  <h2>Contact</h2>
+  <p>Email : studiojasmin@email.com</p>
+  <p>Instagram : @studiojasmin</p>
 </section>
 
 <footer>
-  <p>© 2026 Mastour & Chic • Boutique & Beauté</p>
+  <p>© 2026 Studio Jasmin • Boutique & Beauté</p>
 </footer>
 
 </body>
-</html> Mise à jour du site Mastour & Chic
+</html>
