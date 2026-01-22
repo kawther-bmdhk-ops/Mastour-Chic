@@ -1,1 +1,262 @@
-Ajout du site Mastour & Chic
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mastour & Chic - Boutique</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --rose:#f7d6e8;
+    --rose2:#f2c4dd;
+    --gold:#d4af37;
+    --text:#1f1f1f;
+    --soft:#fdf7fb;
+    --border:#e6d7e2;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    font-family:'Poppins',sans-serif;
+    color:var(--text);
+    background:linear-gradient(180deg, #fff 0%, var(--soft) 100%);
+  }
+  header{
+    padding:20px 18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid var(--border);
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+  .logo{
+    font-family:'Playfair Display',serif;
+    font-size:22px;
+    font-weight:700;
+    color:#1a1a1a;
+    letter-spacing:1px;
+  }
+  nav a{
+    margin-left:18px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+  }
+  .btn{
+    padding:10px 14px;
+    border:1px solid var(--border);
+    background:#fff;
+    border-radius:10px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+  }
+  .btn:hover{border-color:var(--gold); color:var(--gold);}
+  .hero{
+    padding:70px 18px 40px;
+    text-align:center;
+  }
+  .hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:44px;
+    color:#1b1b1b;
+    margin-bottom:12px;
+  }
+  .hero p{
+    font-size:16px;
+    color:#555;
+    margin-bottom:20px;
+  }
+  .hero .cta{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .btn-primary{
+    background:var(--gold);
+    border-color:var(--gold);
+    color:#fff;
+  }
+  .btn-primary:hover{
+    background:#c89f2f;
+    border-color:#c89f2f;
+  }
+  .section{
+    padding:40px 18px;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,0.05);
+  }
+  .card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+  }
+  .card-body{
+    padding:18px;
+  }
+  .card-title{
+    font-family:'Playfair Display',serif;
+    font-size:20px;
+    margin-bottom:8px;
+  }
+  .card-text{
+    font-size:14px;
+    color:#666;
+    margin-bottom:12px;
+  }
+  .card .btn{
+    border-radius:12px;
+  }
+  .banner{
+    margin:40px 0;
+    padding:30px 18px;
+    background:linear-gradient(90deg, var(--rose), var(--rose2));
+    border-radius:20px;
+    text-align:center;
+  }
+  .banner h2{
+    font-family:'Playfair Display',serif;
+    font-size:26px;
+    margin-bottom:8px;
+  }
+  .banner p{
+    font-size:15px;
+    color:#4a4a4a;
+  }
+  footer{
+    padding:25px 18px;
+    background:#fff;
+    border-top:1px solid var(--border);
+    text-align:center;
+  }
+  footer p{
+    color:#777;
+    font-size:14px;
+  }
+  @media(max-width:900px){
+    .grid{grid-template-columns:1fr;}
+    .hero h1{font-size:36px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Mastour & Chic</div>
+  <nav>
+    <a href="#shop">Boutique</a>
+    <a href="#brow">Brow Lift</a>
+    <a href="#access">Accessoires</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="btn">Panier</button>
+</header>
+
+<section class="hero">
+  <h1>La boutique chic & moderne</h1>
+  <p>Bienvenue chez Mastour & Chic.<br><br>
+Mastour & Chic est une boutique en ligne chic et moderne dédiée aux accessoires, voiles et inspirations mode.
+Nous sélectionnons des pièces élégantes et tendances pour sublimer chaque style, au quotidien comme pour les occasions spéciales.<br><br>
+Découvrez nos collections et inspirations soigneusement choisies pour allier féminité, modernité et élégance.</p>
+  <div class="cta">
+    <button class="btn btn-primary">Découvrir la boutique</button>
+    <button class="btn">Voir les looks</button>
+  </div>
+</section>
+
+<section class="section" id="shop">
+  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Nos collections</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Mode chic">
+      <div class="card-body">
+        <div class="card-title">Voiles & accessoires</div>
+        <div class="card-text">Des voiles élégants, des accessoires tendance pour un style moderne.</div>
+        <button class="btn">Voir la collection</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Mode chic">
+      <div class="card-body">
+        <div class="card-title">Textile & looks</div>
+        <div class="card-text">Des tenues simples, chic et modernes pour toutes les occasions.</div>
+        <button class="btn">Voir la collection</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="banner">
+  <h2>Beauté & style</h2>
+  <p>Coin Brow lift / Rehaussement de cils dans la boutique. Prends rendez-vous pour sublimer ton regard.</p>
+</div>
+
+<section class="section" id="brow">
+  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Brow Lift & Cils</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" alt="Brow lift">
+      <div class="card-body">
+        <div class="card-title">Brow Lift</div>
+        <div class="card-text">Un regard plus ouvert et des sourcils parfaitement dessinés.</div>
+        <button class="btn">Réserver</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1591061232913-6d5d2d56d1f2?auto=format&fit=crop&w=1200&q=80" alt="Rehaussement de cils">
+      <div class="card-body">
+        <div class="card-title">Rehaussement de cils</div>
+        <div class="card-text">Des cils plus longs, plus recourbés et un regard intensifié.</div>
+        <button class="btn">Réserver</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="access">
+  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Accessoires & tendances</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975693410-7bba5c9c5f0b?auto=format&fit=crop&w=1200&q=80" alt="Accessoires">
+      <div class="card-body">
+        <div class="card-title">Accessoires téléphone</div>
+        <div class="card-text">Coques, accessoires et petits indispensables pour un style complet.</div>
+        <button class="btn">Voir la collection</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80" alt="Accessoires mode">
+      <div class="card-body">
+        <div class="card-title">Accessoires mode</div>
+        <div class="card-text">Bijoux, sacs et petits détails qui font toute la différence.</div>
+        <button class="btn">Voir la collection</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2 style="font-family:'Playfair Display',serif; font-size:28px; margin-bottom:18px;">Contact</h2>
+  <p style="margin-bottom:12px;">Tu veux en savoir plus ? Envoie un message :</p>
+  <p style="color:#777; font-size:14px;">Email : contact@mastourchic.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Mastour & Chic • Boutique & Beauté</p>
+</footer>
+
+</body>
+</html> Mise à jour du site Mastour & Chic
