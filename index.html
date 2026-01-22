@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Studio Jasmin</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Polices -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <style>
   :root{
     --jaune:#fff3c9;     /* jaune laiteux */
@@ -41,19 +44,23 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:#fff;
+    background:rgba(255,255,255,0.65); /* pas blanc solide */
+    backdrop-filter: blur(8px);
     position:sticky;
     top:0;
     z-index:10;
     border-bottom:1px solid var(--border);
   }
+
   .logo{
-    font-family:'Playfair Display',serif;
-    font-size:24px;
+    font-family:'Dancing Script', cursive;
+    font-size:28px;
     font-weight:700;
-    color:#1a1a1a;
+    color:var(--rose);
     letter-spacing:1px;
+    text-shadow: 2px 2px 0 rgba(255,154,61,0.25);
   }
+
   nav a{
     margin-left:16px;
     text-decoration:none;
@@ -61,6 +68,7 @@
     font-weight:600;
     font-size:14px;
   }
+
   .btn{
     padding:10px 14px;
     border:2px solid var(--rose);
@@ -83,10 +91,10 @@
     color:#fff;
   }
   .hero h1{
-    font-family:'Playfair Display',serif;
-    font-size:48px;
+    font-family:'Dancing Script', cursive;
+    font-size:52px;
     margin-bottom:12px;
-    text-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
   }
   .hero p{
     font-size:18px;
@@ -96,6 +104,7 @@
     margin-right:auto;
     text-shadow: 0 3px 10px rgba(0,0,0,0.2);
   }
+
   .hero .cta{
     display:flex;
     justify-content:center;
@@ -117,7 +126,7 @@
     padding:40px 18px;
   }
   .section h2{
-    font-family:'Playfair Display',serif;
+    font-family:'Dancing Script', cursive;
     font-size:30px;
     margin-bottom:18px;
     color:var(--rose);
@@ -152,12 +161,13 @@
     height:220px;
     object-fit:cover;
   }
+
   .card-body{
     padding:18px;
   }
   .card-title{
-    font-family:'Playfair Display',serif;
-    font-size:20px;
+    font-family:'Dancing Script', cursive;
+    font-size:22px;
     margin-bottom:8px;
     color:var(--rose);
   }
@@ -179,7 +189,7 @@
     border:2px solid var(--border);
   }
   .banner h2{
-    font-family:'Playfair Display',serif;
+    font-family:'Dancing Script', cursive;
     font-size:28px;
     margin-bottom:8px;
     color:var(--rose);
@@ -202,7 +212,7 @@
 
   @media(max-width:900px){
     .grid{grid-template-columns:1fr;}
-    .hero h1{font-size:40px;}
+    .hero h1{font-size:42px;}
   }
 </style>
 </head>
@@ -220,7 +230,7 @@
 </header>
 
 <section class="hero">
-  <h1>Beauté & style, en un seul endroit</h1>
+  <h1>Beauté & style en mode girly</h1>
   <p>Brow lift • Rehaussement de cils • Accessoires mode</p>
   <div class="cta">
     <button class="btn btn-primary">Découvrir la boutique</button>
