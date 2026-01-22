@@ -10,9 +10,9 @@
 
 <style>
   :root{
-    --jaune:#fff3c9;
-    --rose:#ff3d8b;
-    --orange:#ff9a3d;
+    --jaune:#fff3c9;     /* jaune laiteux */
+    --rose:#ff2b8a;      /* rose pétant */
+    --bleu:#2d7fff;      /* bleu */
     --text:#1f1f1f;
     --soft:#fff7e6;
     --border:#f4d6e2;
@@ -32,9 +32,9 @@
     top:0; left:0;
     width:100%; height:100%;
     background:
-      radial-gradient(circle at 20% 20%, rgba(255,61,139,0.08) 0 10px, transparent 10px),
-      radial-gradient(circle at 80% 30%, rgba(255,154,61,0.08) 0 12px, transparent 12px),
-      radial-gradient(circle at 50% 80%, rgba(255,61,139,0.06) 0 14px, transparent 14px);
+      radial-gradient(circle at 20% 20%, rgba(255,43,138,0.08) 0 10px, transparent 10px),
+      radial-gradient(circle at 80% 30%, rgba(45,127,255,0.08) 0 12px, transparent 12px),
+      radial-gradient(circle at 50% 80%, rgba(255,43,138,0.06) 0 14px, transparent 14px);
     pointer-events:none;
     z-index:-1;
   }
@@ -59,8 +59,8 @@
     color:var(--rose);
     letter-spacing:1px;
     text-shadow:
-      2px 2px 0 rgba(255,154,61,0.25),
-      4px 4px 0 rgba(255,61,139,0.15);
+      2px 2px 0 rgba(45,127,255,0.25),
+      4px 4px 0 rgba(255,43,138,0.15);
   }
 
   nav a{
@@ -88,7 +88,7 @@
   .hero{
     padding:90px 18px 50px;
     text-align:center;
-    background:linear-gradient(135deg, var(--rose), var(--orange));
+    background:linear-gradient(135deg, var(--rose), var(--bleu));
     border-bottom:1px solid var(--border);
     color:#fff;
   }
@@ -98,7 +98,7 @@
     margin-bottom:12px;
     text-shadow:
       3px 3px 0 rgba(0,0,0,0.2),
-      6px 6px 0 rgba(255,154,61,0.25);
+      6px 6px 0 rgba(45,127,255,0.25);
   }
   .hero p{
     font-size:18px;
@@ -136,7 +136,7 @@
     margin-bottom:18px;
     color:var(--rose);
     text-shadow:
-      2px 2px 0 rgba(255,154,61,0.2);
+      2px 2px 0 rgba(45,127,255,0.2);
   }
 
   .grid{
@@ -159,14 +159,8 @@
     position:absolute;
     top:-20px; right:-20px;
     width:90px; height:90px;
-    background:radial-gradient(circle, rgba(255,154,61,0.25) 0%, transparent 70%);
+    background:radial-gradient(circle, rgba(45,127,255,0.25) 0%, transparent 70%);
     pointer-events:none;
-  }
-
-  .card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
   }
 
   .card-body{
@@ -200,7 +194,7 @@
     font-size:32px;
     margin-bottom:8px;
     color:var(--rose);
-    text-shadow: 2px 2px 0 rgba(255,154,61,0.2);
+    text-shadow: 2px 2px 0 rgba(45,127,255,0.2);
   }
   .banner p{
     font-size:16px;
@@ -250,7 +244,6 @@
   <h2>Nos collections</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://images.pexels.com/photos/7349831/pexels-photo-7349831.jpeg" alt="Voiles & accessoires">
       <div class="card-body">
         <div class="card-title">Voiles & accessoires</div>
         <div class="card-text">Voiles élégants & accessoires tendance</div>
@@ -258,7 +251,6 @@
       </div>
     </div>
     <div class="card">
-      <img src="https://images.pexels.com/photos/8411308/pexels-photo-8411308.jpeg" alt="Textile & looks">
       <div class="card-body">
         <div class="card-title">Textile & looks</div>
         <div class="card-text">Looks chics, simples & modernes</div>
@@ -272,7 +264,6 @@
   <h2>Accessoires</h2>
   <div class="grid">
     <div class="card">
-      <img src="https://images.pexels.com/photos/5082588/pexels-photo-5082588.jpeg" alt="Accessoires téléphone">
       <div class="card-body">
         <div class="card-title">Accessoires téléphone</div>
         <div class="card-text">Coques & accessoires stylés</div>
@@ -280,7 +271,6 @@
       </div>
     </div>
     <div class="card">
-      <img src="https://images.pexels.com/photos/5540217/pexels-photo-5540217.jpeg" alt="Bijoux">
       <div class="card-body">
         <div class="card-title">Bijoux & détails</div>
         <div class="card-text">Bijoux & détails qui font la différence</div>
