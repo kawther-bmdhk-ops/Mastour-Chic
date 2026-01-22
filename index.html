@@ -5,16 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Studio Jasmin</title>
 
-<!-- Police fluffy -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --jaune:#fff3c9;     /* jaune laiteux */
-    --rose:#ff2b8a;      /* rose pétant */
-    --bleu:#2d7fff;      /* bleu */
+    --rose-fuchsia:#ff2b8a;
+    --rose-clair:#ffd1e8;
+    --vert-matcha:#9ccf6d;
     --text:#1f1f1f;
-    --soft:#fff7e6;
     --border:#f4d6e2;
   }
 
@@ -22,19 +20,25 @@
   body{
     font-family:'Poppins',sans-serif;
     color:var(--text);
-    background:linear-gradient(180deg, var(--jaune) 0%, #fff 100%);
+    background:
+      linear-gradient(180deg, #fff 0%, #fff 100%),
+      repeating-linear-gradient(
+        45deg,
+        #ffffff 0px,
+        #ffffff 30px,
+        var(--vert-matcha) 30px,
+        var(--vert-matcha) 60px
+      );
+    background-size: 100% 100%;
   }
 
-  /* motif subtil */
+  /* overlay doux pour adoucir le motif */
   body::before{
     content:"";
     position:fixed;
     top:0; left:0;
     width:100%; height:100%;
-    background:
-      radial-gradient(circle at 20% 20%, rgba(255,43,138,0.08) 0 10px, transparent 10px),
-      radial-gradient(circle at 80% 30%, rgba(45,127,255,0.08) 0 12px, transparent 12px),
-      radial-gradient(circle at 50% 80%, rgba(255,43,138,0.06) 0 14px, transparent 14px);
+    background: rgba(255,209,232,0.55);
     pointer-events:none;
     z-index:-1;
   }
@@ -44,7 +48,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(255,255,255,0.55);
+    background:rgba(255,255,255,0.75);
     backdrop-filter: blur(10px);
     position:sticky;
     top:0;
@@ -56,10 +60,10 @@
     font-family:'Dancing Script', cursive;
     font-size:34px;
     font-weight:700;
-    color:var(--rose);
+    color:var(--rose-fuchsia);
     letter-spacing:1px;
     text-shadow:
-      2px 2px 0 rgba(45,127,255,0.25),
+      2px 2px 0 rgba(156,207,109,0.2),
       4px 4px 0 rgba(255,43,138,0.15);
   }
 
@@ -73,7 +77,7 @@
 
   .btn{
     padding:10px 14px;
-    border:2px solid var(--rose);
+    border:2px solid var(--rose-fuchsia);
     background:transparent;
     border-radius:14px;
     font-weight:700;
@@ -81,14 +85,14 @@
     transition:0.3s;
   }
   .btn:hover{
-    background:var(--rose);
+    background:var(--rose-fuchsia);
     color:#fff;
   }
 
   .hero{
     padding:90px 18px 50px;
     text-align:center;
-    background:linear-gradient(135deg, var(--rose), var(--bleu));
+    background: linear-gradient(135deg, rgba(255,43,138,0.35), rgba(156,207,109,0.25));
     border-bottom:1px solid var(--border);
     color:#fff;
   }
@@ -96,9 +100,10 @@
     font-family:'Dancing Script', cursive;
     font-size:60px;
     margin-bottom:12px;
+    color:var(--rose-fuchsia);
     text-shadow:
       3px 3px 0 rgba(0,0,0,0.2),
-      6px 6px 0 rgba(45,127,255,0.25);
+      6px 6px 0 rgba(156,207,109,0.25);
   }
   .hero p{
     font-size:18px;
@@ -106,7 +111,8 @@
     max-width:720px;
     margin-left:auto;
     margin-right:auto;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    color:#333;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.1);
   }
 
   .hero .cta{
@@ -117,14 +123,14 @@
   }
 
   .btn-primary{
-    background:#fff;
-    color:var(--rose);
-    border-color:#fff;
+    background:var(--rose-fuchsia);
+    color:#fff;
+    border-color:var(--rose-fuchsia);
   }
   .btn-primary:hover{
-    background:var(--rose);
-    color:#fff;
-    border-color:var(--rose);
+    background:#fff;
+    color:var(--rose-fuchsia);
+    border-color:var(--rose-fuchsia);
   }
 
   .section{
@@ -134,9 +140,9 @@
     font-family:'Dancing Script', cursive;
     font-size:34px;
     margin-bottom:18px;
-    color:var(--rose);
+    color:var(--rose-fuchsia);
     text-shadow:
-      2px 2px 0 rgba(45,127,255,0.2);
+      2px 2px 0 rgba(156,207,109,0.2);
   }
 
   .grid{
@@ -146,7 +152,7 @@
   }
 
   .card{
-    background:#fff;
+    background:rgba(255,255,255,0.85);
     border:2px solid var(--border);
     border-radius:24px;
     overflow:hidden;
@@ -159,7 +165,7 @@
     position:absolute;
     top:-20px; right:-20px;
     width:90px; height:90px;
-    background:radial-gradient(circle, rgba(45,127,255,0.25) 0%, transparent 70%);
+    background:radial-gradient(circle, rgba(255,43,138,0.25) 0%, transparent 70%);
     pointer-events:none;
   }
 
@@ -170,7 +176,7 @@
     font-family:'Dancing Script', cursive;
     font-size:24px;
     margin-bottom:8px;
-    color:var(--rose);
+    color:var(--rose-fuchsia);
   }
   .card-text{
     font-size:14px;
@@ -184,7 +190,7 @@
   .banner{
     margin:40px 0;
     padding:30px 18px;
-    background:linear-gradient(135deg, #fff, var(--jaune));
+    background:linear-gradient(135deg, #fff, rgba(156,207,109,0.25));
     border-radius:26px;
     text-align:center;
     border:2px solid var(--border);
@@ -193,8 +199,8 @@
     font-family:'Dancing Script', cursive;
     font-size:32px;
     margin-bottom:8px;
-    color:var(--rose);
-    text-shadow: 2px 2px 0 rgba(45,127,255,0.2);
+    color:var(--rose-fuchsia);
+    text-shadow: 2px 2px 0 rgba(156,207,109,0.2);
   }
   .banner p{
     font-size:16px;
@@ -203,7 +209,7 @@
 
   footer{
     padding:25px 18px;
-    background:#fff;
+    background:rgba(255,255,255,0.85);
     border-top:1px solid var(--border);
     text-align:center;
   }
