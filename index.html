@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Studio Jasmin</title>
 
-<!-- Polices -->
+<!-- Police fluffy -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root{
-    --jaune:#fff3c9;     /* jaune laiteux */
-    --rose:#ff3d8b;      /* rose vif */
-    --orange:#ff9a3d;    /* orange */
+    --jaune:#fff3c9;
+    --rose:#ff3d8b;
+    --orange:#ff9a3d;
     --text:#1f1f1f;
     --soft:#fff7e6;
     --border:#f4d6e2;
@@ -44,8 +44,8 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(255,255,255,0.65); /* pas blanc solide */
-    backdrop-filter: blur(8px);
+    background:rgba(255,255,255,0.55);
+    backdrop-filter: blur(10px);
     position:sticky;
     top:0;
     z-index:10;
@@ -54,11 +54,13 @@
 
   .logo{
     font-family:'Dancing Script', cursive;
-    font-size:28px;
+    font-size:34px;
     font-weight:700;
     color:var(--rose);
     letter-spacing:1px;
-    text-shadow: 2px 2px 0 rgba(255,154,61,0.25);
+    text-shadow:
+      2px 2px 0 rgba(255,154,61,0.25),
+      4px 4px 0 rgba(255,61,139,0.15);
   }
 
   nav a{
@@ -73,7 +75,7 @@
     padding:10px 14px;
     border:2px solid var(--rose);
     background:transparent;
-    border-radius:12px;
+    border-radius:14px;
     font-weight:700;
     cursor:pointer;
     transition:0.3s;
@@ -84,7 +86,7 @@
   }
 
   .hero{
-    padding:80px 18px 40px;
+    padding:90px 18px 50px;
     text-align:center;
     background:linear-gradient(135deg, var(--rose), var(--orange));
     border-bottom:1px solid var(--border);
@@ -92,9 +94,11 @@
   }
   .hero h1{
     font-family:'Dancing Script', cursive;
-    font-size:52px;
+    font-size:60px;
     margin-bottom:12px;
-    text-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+    text-shadow:
+      3px 3px 0 rgba(0,0,0,0.2),
+      6px 6px 0 rgba(255,154,61,0.25);
   }
   .hero p{
     font-size:18px;
@@ -111,6 +115,7 @@
     gap:12px;
     flex-wrap:wrap;
   }
+
   .btn-primary{
     background:#fff;
     color:var(--rose);
@@ -127,9 +132,11 @@
   }
   .section h2{
     font-family:'Dancing Script', cursive;
-    font-size:30px;
+    font-size:34px;
     margin-bottom:18px;
     color:var(--rose);
+    text-shadow:
+      2px 2px 0 rgba(255,154,61,0.2);
   }
 
   .grid{
@@ -141,9 +148,9 @@
   .card{
     background:#fff;
     border:2px solid var(--border);
-    border-radius:22px;
+    border-radius:24px;
     overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    box-shadow:0 12px 30px rgba(0,0,0,0.08);
     position:relative;
   }
 
@@ -151,7 +158,7 @@
     content:"";
     position:absolute;
     top:-20px; right:-20px;
-    width:80px; height:80px;
+    width:90px; height:90px;
     background:radial-gradient(circle, rgba(255,154,61,0.25) 0%, transparent 70%);
     pointer-events:none;
   }
@@ -167,7 +174,7 @@
   }
   .card-title{
     font-family:'Dancing Script', cursive;
-    font-size:22px;
+    font-size:24px;
     margin-bottom:8px;
     color:var(--rose);
   }
@@ -177,22 +184,23 @@
     margin-bottom:12px;
   }
   .card .btn{
-    border-radius:14px;
+    border-radius:16px;
   }
 
   .banner{
     margin:40px 0;
     padding:30px 18px;
     background:linear-gradient(135deg, #fff, var(--jaune));
-    border-radius:22px;
+    border-radius:26px;
     text-align:center;
     border:2px solid var(--border);
   }
   .banner h2{
     font-family:'Dancing Script', cursive;
-    font-size:28px;
+    font-size:32px;
     margin-bottom:8px;
     color:var(--rose);
+    text-shadow: 2px 2px 0 rgba(255,154,61,0.2);
   }
   .banner p{
     font-size:16px;
@@ -212,7 +220,7 @@
 
   @media(max-width:900px){
     .grid{grid-template-columns:1fr;}
-    .hero h1{font-size:42px;}
+    .hero h1{font-size:46px;}
   }
 </style>
 </head>
